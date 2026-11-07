@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Services — BSFlowTech | SuiteDash & n8n Implementation</title>
-<meta name="description" content="BSFlowTech services: SuiteDash CRM & client portal setup, n8n workflow automation, and integrated business systems."/>
+<title>Services — BSFlowTech | SuiteDash, n8n & Business Automation</title>
+<meta name="description" content="BSFlowTech services: SuiteDash CRM, n8n workflow automation, GoHighLevel, Pabbly, Lawcus, WordPress, Stripe, and integrated business systems."/>
 <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/reyrosal123/BusinessFlowTech/main/BSFlowTech.jpeg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -34,11 +34,7 @@ h1,h2,h3,h4{font-family:'Syne',sans-serif;line-height:1.15;letter-spacing:-.02em
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 img{max-width:100%;display:block}
-
-/* Canvas particles */
 #particles-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
-
-/* Navigation */
 .nav{position:fixed;inset:0 0 auto;height:72px;z-index:50;background:rgba(11,18,32,0.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
 .nav.scrolled{box-shadow:0 4px 30px rgba(36,123,255,0.08)}
 .nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 1.5rem}
@@ -53,21 +49,15 @@ img{max-width:100%;display:block}
 .links .btn{color:#fff;padding:.5rem 1.2rem;font-size:.85rem;background:var(--grad);border-radius:999px;border:none;font-weight:600}
 .links .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(36,123,255,0.3)}
 .burger{display:none;background:none;border:0;color:var(--white);font-size:1.4rem;cursor:pointer;width:44px;height:44px}
-
-/* Mobile menu */
 .mob-menu{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(11,18,32,0.98);backdrop-filter:blur(24px);z-index:45;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding:2rem}
 .mob-menu.open{display:flex}
 .mob-menu a{color:var(--white);font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700}
 .mob-menu a.active{color:var(--cyan)}
-
-/* Buttons */
 .btn{display:inline-block;padding:.85rem 1.8rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--border);cursor:pointer;font-family:inherit;color:var(--white);background:none;transition:transform .2s,box-shadow .2s,background .2s;text-align:center}
 .btn:hover{transform:translateY(-2px)}
 .btn-p{background:var(--grad);border:0;box-shadow:0 6px 24px rgba(36,123,255,0.28)}
 .btn-p:hover{box-shadow:0 10px 30px rgba(36,123,255,0.4)}
 .btn-g:hover{background:var(--card)}
-
-/* Sections */
 section{padding:90px 0;position:relative;z-index:2}
 .wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem}
 .alt{background:var(--surface)}
@@ -78,57 +68,32 @@ h2{font-size:clamp(1.8rem,3.4vw,2.7rem);margin-bottom:1rem}
 .head{margin-bottom:3.5rem}
 .center{text-align:center}
 .center .lead{margin:0 auto}
-
-/* Glass cards */
 .glass{background:var(--card);border:1px solid var(--border);border-radius:20px;backdrop-filter:blur(14px);box-shadow:var(--shadow);transition:transform .35s,border-color .3s}
 .glass:hover{transform:translateY(-6px);border-color:rgba(36,123,255,0.25)}
-
-/* Reveal animations */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
 .rv.on{opacity:1;transform:none}
 .rv-left{opacity:0;transform:translateX(-30px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
 .rv-left.on{opacity:1;transform:none}
 .rv-right{opacity:0;transform:translateX(30px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
 .rv-right.on{opacity:1;transform:none}
-
-/* Back to top */
 .back-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:12px;background:var(--card);border:1px solid var(--border);display:grid;place-items:center;color:var(--cyan);font-size:1rem;cursor:pointer;z-index:40;transition:all .3s;opacity:0;transform:translateY(20px);text-decoration:none}
 .back-top.show{opacity:1;transform:translateY(0)}
 .back-top:hover{background:rgba(36,123,255,0.12);border-color:rgba(36,123,255,0.3);transform:translateY(-3px)}
-
-/* Footer */
 footer{border-top:1px solid var(--border);padding:2.5rem 0 2rem;background:var(--surface);position:relative;z-index:2}
 .fgrid{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
 footer p,footer li,footer a{color:var(--muted);font-size:.88rem}
 footer ul{list-style:none;display:flex;gap:1.2rem;flex-wrap:wrap}
 footer a:hover{color:var(--white)}
-.footer-logo{display:flex;align-items:center;gap:.6rem;font-family:'Syne',sans-serif;font-weight:700;color:var(--white)}
-.footer-logo img{height:32px;width:auto;border-radius:6px}
-
-/* Toast */
 .toast{position:fixed;bottom:1.5rem;right:1.5rem;max-width:340px;padding:1rem 1.3rem;background:var(--surface);border:1px solid var(--border);border-radius:14px;z-index:99;transform:translateY(140%);transition:transform .4s;font-size:.9rem;color:var(--white)}
 .toast.show{transform:none}
 .toast.ok{border-color:var(--cyan)}
 .toast.err{border-color:#EF4444}
-
-/* Scrollbar */
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px}
-
-/* Reduced motion */
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-
-/* Responsive */
-@media (max-width:900px){
-  .links{display:none}
-  .burger{display:block}
-  section{padding:64px 0}
-}
-@media (max-width:760px){
-  h2{font-size:1.6rem}
-  .fgrid{flex-direction:column;text-align:center}
-}
+@media (max-width:900px){.links{display:none}.burger{display:block}section{padding:64px 0}}
+@media (max-width:760px){h2{font-size:1.6rem}.fgrid{flex-direction:column;text-align:center}}
 
 
 .page-hero{min-height:45vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 1.5rem 70px;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(32,214,210,.10) 0%,transparent 70%)}
@@ -136,25 +101,48 @@ footer a:hover{color:var(--white)}
 .page-hero h1 span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .page-hero .lead{margin:0 auto;font-size:1.05rem}
 
+/* Primary focus banner */
+.focus-banner{background:linear-gradient(135deg,rgba(36,123,255,.10),rgba(32,214,210,.08));border:1px solid rgba(36,123,255,.2);border-radius:20px;padding:2rem 2.5rem;text-align:center;max-width:900px;margin:0 auto 3rem}
+.focus-banner h3{font-size:1.15rem;margin-bottom:.5rem;color:var(--white)}
+.focus-banner p{color:var(--muted);font-size:.94rem;line-height:1.7}
+.focus-tags{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
+.focus-tag{font-size:.8rem;padding:.35rem 1rem;border-radius:999px;background:rgba(36,123,255,.12);color:#7C9BFF;border:1px solid rgba(36,123,255,.2);font-weight:500}
+
 /* Service cards */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem}
 .svc-card{padding:2.2rem}
 .svc-icon{width:56px;height:56px;border-radius:14px;background:rgba(36,123,255,.15);color:#7C9BFF;display:grid;place-items:center;font-size:1.3rem;margin-bottom:1.2rem}
 .svc-card h3{font-size:1.2rem;margin-bottom:.7rem}
 .svc-card>p{color:var(--muted);font-size:.94rem;line-height:1.75;margin-bottom:1.2rem}
 .svc-list{list-style:none;display:grid;gap:.45rem}
 .svc-list li{display:flex;align-items:flex-start;gap:.55rem;color:var(--muted);font-size:.86rem}
-.svc-list li i{color:var(--cyan);margin-top:.15rem;font-size:.72rem;flex-shrink:0}
+.svc-list li i{color:var(--cyan);font-size:.72rem;margin-top:.15rem;flex-shrink:0}
+.note{background:rgba(32,214,210,.06);border:1px solid rgba(32,214,210,.15);border-radius:12px;padding:1rem 1.2rem;margin-top:1.2rem;font-size:.85rem;color:var(--muted);line-height:1.6}
+.note i{color:var(--cyan);margin-right:.4rem}
 
-/* Integration section */
-.int-box{padding:2.5rem;max-width:950px;margin:0 auto;text-align:center}
-.int-box h3{font-size:1.35rem;margin-bottom:.8rem}
-.int-box>p{color:var(--muted);line-height:1.8;margin-bottom:1.5rem}
-.int-examples{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;text-align:left;margin-top:1.5rem}
-.int-ex{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:1.2rem}
-.int-ex i{color:var(--blue);font-size:1rem;margin-bottom:.4rem;display:block}
-.int-ex h4{font-size:.92rem;margin-bottom:.25rem}
-.int-ex p{color:var(--muted);font-size:.82rem;line-height:1.6}
+/* Additional services */
+.addon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.addon-card{padding:1.8rem}
+.addon-icon{width:44px;height:44px;border-radius:11px;background:rgba(124,155,255,.12);color:#7C9BFF;display:grid;place-items:center;font-size:1.05rem;margin-bottom:.9rem}
+.addon-card h4{font-size:1rem;margin-bottom:.5rem}
+.addon-card p{color:var(--muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem}
+.addon-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+.addon-tag{font-size:.7rem;padding:.18rem .6rem;border-radius:999px;background:rgba(108,99,255,.10);color:#9B95FF;border:1px solid rgba(108,99,255,.18)}
+
+/* Pricing */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.price-card{padding:2.2rem;text-align:center;position:relative;overflow:hidden}
+.price-card.featured{border-color:rgba(36,123,255,.3);background:linear-gradient(135deg,rgba(36,123,255,.06) 0%,rgba(32,214,210,.04) 100%)}
+.price-card.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.price-popular{position:absolute;top:1rem;right:1rem;background:var(--grad);color:white;font-size:.65rem;font-weight:700;padding:.2rem .7rem;border-radius:999px;letter-spacing:.05em}
+.price-icon{width:52px;height:52px;border-radius:14px;background:rgba(36,123,255,.12);display:grid;place-items:center;margin:0 auto 1.2rem;font-size:1.2rem;color:var(--blue)}
+.price-card h3{font-size:1.15rem;margin-bottom:.3rem}
+.price-card .price-sub{color:var(--muted);font-size:.84rem;margin-bottom:1.5rem}
+.price-amount{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;line-height:1;margin-bottom:.3rem}
+.price-per{color:var(--muted);font-size:.85rem;margin-bottom:1.8rem}
+.price-features{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;text-align:left}
+.price-feat{display:flex;align-items:center;gap:.55rem;font-size:.88rem;color:var(--muted)}
+.price-feat i{color:var(--cyan);font-size:.75rem;flex-shrink:0}
 
 /* CTA */
 .cta{background:var(--surface);text-align:center}
@@ -163,50 +151,36 @@ footer a:hover{color:var(--white)}
 .cta h2{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:1rem;position:relative;z-index:1}
 .cta p{color:var(--muted);max-width:520px;margin:0 auto 2rem;line-height:1.8;position:relative;z-index:1}
 
-@media(max-width:960px){.svc-grid{grid-template-columns:1fr}}
-@media(max-width:760px){.int-examples{grid-template-columns:1fr}}
+@media(max-width:960px){.svc-grid{grid-template-columns:1fr} .addon-grid{grid-template-columns:1fr 1fr} .pricing-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.addon-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <canvas id="particles-canvas"></canvas>
-
-<nav class="nav" id="mainNav">
-  <div class="wrap" style="height:100%;display:flex;align-items:center;justify-content:space-between;">
-    <a href="index.html" class="logo">
-      <img src="https://raw.githubusercontent.com/reyrosal123/BusinessFlowTech/main/BSFlowTech.jpeg" alt="BSFlowTech logo" style="height:36px;width:auto;border-radius:8px;"/>
-      <b>BSFlowTech</b>
-    </a>
-    <ul class="links">
-      <li><a href="index.html" class="">Home</a></li><li><a href="solutions.html" class="">Solutions</a></li><li><a href="services.html" class="active">Services</a></li><li><a href="projects.html" class="">Projects</a></li><li><a href="experience.html" class="">Experience</a></li><li><a href="about.html" class="">About</a></li><li><a href="contact.html" class="">Contact</a></li>
-      <li><a href="contact.html" class="btn">Let's Talk</a></li>
-    </ul>
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
-  </div>
-</nav>
-<div class="mob-menu" id="links">
-  <a href="index.html" class="mob-link">Home</a><a href="solutions.html" class="mob-link">Solutions</a><a href="services.html" class="mob-link active">Services</a><a href="projects.html" class="mob-link">Projects</a><a href="experience.html" class="mob-link">Experience</a><a href="about.html" class="mob-link">About</a><a href="contact.html" class="mob-link">Contact</a>
-  <a href="contact.html" class="btn btn-p" style="margin-top:1rem;">Let's Talk</a>
-</div>
-<a href="#" class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
-
+<nav class="nav" id="mainNav"><div class="wrap" style="height:100%;display:flex;align-items:center;justify-content:space-between;"><a href="index.html" class="logo"><img src="https://raw.githubusercontent.com/reyrosal123/BusinessFlowTech/main/BSFlowTech.jpeg" alt="BSFlowTech logo" style="height:36px;width:auto;border-radius:8px;"/><b>BSFlowTech</b></a><ul class="links"><li><a href="index.html" class="">Home</a></li><li><a href="solutions.html" class="">Solutions</a></li><li><a href="services.html" class="active">Services</a></li><li><a href="projects.html" class="">Projects</a></li><li><a href="experience.html" class="">Experience</a></li><li><a href="results.html" class="">Results</a></li><li><a href="about.html" class="">About</a></li><li><a href="contact.html" class="">Contact</a></li><li><a href="contact.html" class="btn">Let's Talk</a></li></ul><button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button></div></nav><div class="mob-menu" id="links"><a href="index.html" class="mob-link">Home</a><a href="solutions.html" class="mob-link">Solutions</a><a href="services.html" class="mob-link active">Services</a><a href="projects.html" class="mob-link">Projects</a><a href="experience.html" class="mob-link">Experience</a><a href="results.html" class="mob-link">Results</a><a href="about.html" class="mob-link">About</a><a href="contact.html" class="mob-link">Contact</a><a href="contact.html" class="btn btn-p" style="margin-top:1rem;">Let's Talk</a></div><a href="#" class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
 
 <section class="page-hero">
   <div class="wrap">
     <div class="rv">
       <div class="eyebrow" style="justify-content:center">Services</div>
       <h1>Implementation Services<br><span>That Deliver Results</span></h1>
-      <p class="lead">Practical, hands-on services to configure, customize, and connect your business systems.</p>
+      <p class="lead">Practical, hands-on services to configure, customize, and connect your business systems — with SuiteDash and n8n at the core.</p>
     </div>
   </div>
 </section>
 
+<!-- PRIMARY SERVICES -->
 <section>
   <div class="wrap">
-    <div class="head center rv">
-      <div class="eyebrow" style="justify-content:center">What We Do</div>
-      <h2>Three Service Pillars</h2>
-      <p class="lead">Each service is designed to solve real operational challenges and create measurable improvements.</p>
+    <div class="focus-banner rv">
+      <h3><i class="fas fa-bullseye" style="color:var(--cyan);margin-right:.5rem"></i>Primary Specialties</h3>
+      <p>These are our core services. Everything else we offer supports and extends these two platforms to fit your specific business needs.</p>
+      <div class="focus-tags">
+        <span class="focus-tag"><i class="fas fa-id-card" style="margin-right:.3rem"></i>SuiteDash CRM & Client Portals</span>
+        <span class="focus-tag"><i class="fas fa-bolt" style="margin-right:.3rem"></i>n8n Workflow Automation</span>
+      </div>
     </div>
+
     <div class="svc-grid">
       <div class="glass svc-card rv" style="transition-delay:.05s">
         <div class="svc-icon"><i class="fas fa-id-card"></i></div>
@@ -227,18 +201,19 @@ footer a:hover{color:var(--white)}
       <div class="glass svc-card rv" style="transition-delay:.1s">
         <div class="svc-icon" style="background:rgba(32,214,210,.15);color:#20D6D2"><i class="fas fa-bolt"></i></div>
         <h3>n8n Workflow Automation</h3>
-        <p>Build automation workflows that connect different applications and eliminate repetitive manual work across your business.</p>
+        <p>n8n is a powerful, flexible automation platform that can connect and automate virtually any application or service with an API. If it has an API, n8n can automate it.</p>
         <ul class="svc-list">
-          <li><i class="fas fa-check"></i><span>Custom workflow development</span></li>
-          <li><i class="fas fa-check"></i><span>API integration and data mapping</span></li>
-          <li><i class="fas fa-check"></i><span>Automated data processing pipelines</span></li>
-          <li><i class="fas fa-check"></i><span>CRM-to-CRM and app-to-app sync</span></li>
-          <li><i class="fas fa-check"></i><span>Automated email, SMS & Slack alerts</span></li>
-          <li><i class="fas fa-check"></i><span>Webhook and event-based triggers</span></li>
-          <li><i class="fas fa-check"></i><span>Conditional logic and branching flows</span></li>
-          <li><i class="fas fa-check"></i><span>Cross-platform communication</span></li>
-          <li><i class="fas fa-check"></i><span>Business process optimization</span></li>
+          <li><i class="fas fa-check"></i><span>Custom workflow development for any business process</span></li>
+          <li><i class="fas fa-check"></i><span>API integration and data mapping between any platforms</span></li>
+          <li><i class="fas fa-check"></i><span>Automated data processing and transformation pipelines</span></li>
+          <li><i class="fas fa-check"></i><span>CRM, email, calendar, and payment platform integrations</span></li>
+          <li><i class="fas fa-check"></i><span>Automated email, SMS, Slack, and Discord notifications</span></li>
+          <li><i class="fas fa-check"></i><span>Webhook and event-based real-time triggers</span></li>
+          <li><i class="fas fa-check"></i><span>Conditional logic, branching, and error handling</span></li>
+          <li><i class="fas fa-check"></i><span>Cross-platform data synchronization</span></li>
+          <li><i class="fas fa-check"></i><span>Scheduled and recurring automation jobs</span></li>
         </ul>
+        <div class="note"><i class="fas fa-info-circle"></i>n8n works with 400+ integrations including Google Workspace, Slack, Notion, Airtable, Shopify, Stripe, HubSpot, Salesforce, and any service with a REST API.</div>
       </div>
       <div class="glass svc-card rv" style="transition-delay:.15s">
         <div class="svc-icon" style="background:rgba(124,155,255,.15);color:#7C9BFF"><i class="fas fa-network-wired"></i></div>
@@ -246,66 +221,101 @@ footer a:hover{color:var(--white)}
         <p>Combine SuiteDash and n8n into a unified ecosystem where your CRM, portal, and automations operate as one connected platform.</p>
         <ul class="svc-list">
           <li><i class="fas fa-check"></i><span>SuiteDash + n8n architecture design</span></li>
-          <li><i class="fas fa-check"></i><span>Auto-create and update CRM records</span></li>
+          <li><i class="fas fa-check"></i><span>Auto-create and update CRM records from any source</span></li>
           <li><i class="fas fa-check"></i><span>Automated client onboarding sequences</span></li>
-          <li><i class="fas fa-check"></i><span>Trigger notifications on record changes</span></li>
+          <li><i class="fas fa-check"></i><span>Trigger notifications on record or task changes</span></li>
           <li><i class="fas fa-check"></i><span>Connect forms to business workflows</span></li>
           <li><i class="fas fa-check"></i><span>Synchronize data across applications</span></li>
           <li><i class="fas fa-check"></i><span>Automate repetitive admin processes</span></li>
           <li><i class="fas fa-check"></i><span>End-to-end system testing & handoff</span></li>
         </ul>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="glass int-box rv">
-      <div class="eyebrow" style="justify-content:center">Integration Examples</div>
-      <h3>What SuiteDash + n8n Integration Can Look Like</h3>
-      <p>These are practical implementation examples — every business is different, and we design the right integration for your specific needs.</p>
-      <div class="int-examples">
-        <div class="int-ex rv" style="transition-delay:.05s">
-          <i class="fas fa-user-plus"></i>
-          <h4>Auto-Create CRM Records</h4>
-          <p>When a new lead fills out a form, n8n automatically creates a contact, company, and deal in SuiteDash — no manual data entry.</p>
-        </div>
-        <div class="int-ex rv" style="transition-delay:.1s">
-          <i class="fas fa-rocket"></i>
-          <h4>Automated Client Onboarding</h4>
-          <p>New client sign-ups trigger a sequence: portal invitation, welcome task assignment, and follow-up reminders — all automated.</p>
-        </div>
-        <div class="int-ex rv" style="transition-delay:.15s">
-          <i class="fas fa-bell"></i>
-          <h4>Smart Notifications</h4>
-          <p>When a deal stage changes or a task is overdue, n8n alerts the right team member via email, Slack, or SMS instantly.</p>
-        </div>
-        <div class="int-ex rv" style="transition-delay:.2s">
-          <i class="fas fa-sync"></i>
-          <h4>Data Synchronization</h4>
-          <p>Keep contact details, project statuses, and billing info consistent between SuiteDash and your other business tools.</p>
-        </div>
-        <div class="int-ex rv" style="transition-delay:.25s">
-          <i class="fas fa-wpforms"></i>
-          <h4>Form-to-Workflow</h4>
-          <p>Intake forms feed directly into business processes — routing to the right department, creating tasks, and updating records.</p>
-        </div>
-        <div class="int-ex rv" style="transition-delay:.3s">
-          <i class="fas fa-cogs"></i>
-          <h4>Admin Automation</h4>
-          <p>Invoice reminders, status reports, document follow-ups, and routine updates handled automatically by n8n workflows.</p>
-        </div>
+      <div class="glass svc-card rv" style="transition-delay:.2s">
+        <div class="svc-icon" style="background:rgba(108,99,255,.12);color:#9B95FF"><i class="fas fa-puzzle-piece"></i></div>
+        <h3>Additional Services</h3>
+        <p>We also provide implementation and integration support for other popular business platforms to complement your core SuiteDash and n8n setup.</p>
+        <ul class="svc-list">
+          <li><i class="fas fa-check"></i><span><strong>GoHighLevel</strong> — funnel builds, CRM setup, workflow automation</span></li>
+          <li><i class="fas fa-check"></i><span><strong>Pabbly Connect</strong> — no-code integrations and automation zaps</span></li>
+          <li><i class="fas fa-check"></i><span><strong>Lawcus</strong> — legal CRM setup, client intake, matter management</span></li>
+          <li><i class="fas fa-check"></i><span><strong>WordPress</strong> — site development, theme customization, maintenance</span></li>
+          <li><i class="fas fa-check"></i><span><strong>WooCommerce</strong> — store setup, product configuration, payment flows</span></li>
+          <li><i class="fas fa-check"></i><span><strong>Stripe</strong> — payment integration, subscription billing, webhook handling</span></li>
+          <li><i class="fas fa-check"></i><span><strong>Custom Development</strong> — HTML, CSS, JavaScript, API integrations</span></li>
+        </ul>
+        <div class="note"><i class="fas fa-info-circle"></i>These services are available as add-ons or standalone projects, but our primary recommendation for new clients is the SuiteDash + n8n stack.</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PRICING -->
+<section class="alt">
+  <div class="wrap">
+    <div class="head center rv">
+      <div class="eyebrow" style="justify-content:center">Pricing</div>
+      <h2>Flexible Engagement Options</h2>
+      <p class="lead">Choose the model that fits your project scope and budget. All pricing is transparent with no hidden fees.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="glass price-card rv" style="transition-delay:.05s">
+        <div class="price-icon"><i class="fas fa-clock"></i></div>
+        <h3>Beginner / Hourly</h3>
+        <p class="price-sub">Best for small tasks and quick fixes</p>
+        <span class="price-amount">$35</span>
+        <p class="price-per">per hour</p>
+        <div class="price-features">
+          <div class="price-feat"><i class="fas fa-check"></i>Small automation tweaks</div>
+          <div class="price-feat"><i class="fas fa-check"></i>CRM field or form adjustments</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Workflow troubleshooting</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Consultation and advice</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Minimum 2-hour billing</div>
+        </div>
+        <a href="contact.html" class="btn btn-g" style="width:100%">Get Started</a>
+      </div>
+      <div class="glass price-card featured rv" style="transition-delay:.1s">
+        <div class="price-popular">POPULAR</div>
+        <div class="price-icon" style="background:rgba(32,214,210,.15);color:#20D6D2"><i class="fas fa-calendar-week"></i></div>
+        <h3>Weekly</h3>
+        <p class="price-sub">Best for focused project sprints</p>
+        <span class="price-amount">$1,200</span>
+        <p class="price-per">per week</p>
+        <div class="price-features">
+          <div class="price-feat"><i class="fas fa-check"></i>Dedicated daily progress</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Up to 30 hours of work</div>
+          <div class="price-feat"><i class="fas fa-check"></i>SuiteDash or n8n builds</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Integration & testing</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Daily updates & revisions</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Priority support</div>
+        </div>
+        <a href="contact.html" class="btn btn-p" style="width:100%">Get Started</a>
+      </div>
+      <div class="glass price-card rv" style="transition-delay:.15s">
+        <div class="price-icon" style="background:rgba(124,155,255,.15);color:#7C9BFF"><i class="fas fa-calendar-alt"></i></div>
+        <h3>Monthly</h3>
+        <p class="price-sub">Best for ongoing automation & CRM management</p>
+        <span class="price-amount">$4,000</span>
+        <p class="price-per">per month</p>
+        <div class="price-features">
+          <div class="price-feat"><i class="fas fa-check"></i>Ongoing CRM & portal management</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Up to 120 hours per month</div>
+          <div class="price-feat"><i class="fas fa-check"></i>New workflow development</div>
+          <div class="price-feat"><i class="fas fa-check"></i>System monitoring & maintenance</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Priority support & consulting</div>
+          <div class="price-feat"><i class="fas fa-check"></i>Monthly strategy review</div>
+        </div>
+        <a href="contact.html" class="btn btn-g" style="width:100%">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
 <section class="cta">
   <div class="wrap">
     <div class="cta-inner rv">
-      <h2>Ready to Implement?</h2>
-      <p>Let's discuss your current setup and build a plan that gets your SuiteDash and n8n systems working together.</p>
+      <h2>Not Sure Which Option Fits?</h2>
+      <p>Every project is different. Let's discuss your needs and we'll recommend the right engagement model and service mix for your business.</p>
       <div class="btns" style="justify-content:center">
         <a href="contact.html" class="btn btn-p">Start Your Project</a>
         <a href="projects.html" class="btn btn-g">See Past Work</a>
@@ -314,32 +324,8 @@ footer a:hover{color:var(--white)}
   </div>
 </section>
 
-
-<footer>
-  <div class="wrap">
-    <div class="fgrid">
-      <div style="display:flex;align-items:center;gap:.7rem;">
-        <img src="https://raw.githubusercontent.com/reyrosal123/BusinessFlowTech/main/BSFlowTech.jpeg" alt="BSFlowTech" style="height:32px;width:auto;border-radius:6px;"/>
-        <span style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);">BSFlowTech</span>
-      </div>
-      <ul>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <p style="text-align:center;color:var(--muted);font-size:.82rem;margin-top:1.5rem;">
-      &copy; 2025 BSFlowTech (Business Tech Flow). Smart Business Systems. Seamless Automation.
-    </p>
-  </div>
-</footer>
-
-
+<footer><div class="wrap"><div class="fgrid"><div style="display:flex;align-items:center;gap:.7rem;"><img src="https://raw.githubusercontent.com/reyrosal123/BusinessFlowTech/main/BSFlowTech.jpeg" alt="BSFlowTech" style="height:32px;width:auto;border-radius:6px;"/><span style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);">BSFlowTech</span></div><ul><li><a href="solutions.html">Solutions</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="results.html">Results</a></li><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div><p style="text-align:center;color:var(--muted);font-size:.82rem;margin-top:1.5rem;">&copy; 2025 BSFlowTech (Business Tech Flow). Smart Business Systems. Seamless Automation.</p></div></footer>
 <script>
-
-// Particles (blue/cyan)
 (function(){
   const c=document.getElementById('particles-canvas'),ctx=c.getContext('2d');
   let W,H,P=[];
@@ -361,23 +347,14 @@ footer a:hover{color:var(--white)}
   }
   (function loop(){ctx.clearRect(0,0,W,H);lines();P.forEach(p=>{p.update();p.draw();});requestAnimationFrame(loop);})();
 })();
-
-// Nav scroll
 const nav=document.getElementById('mainNav'),bt=document.getElementById('backTop');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40);bt&&bt.classList.toggle('show',scrollY>500);});
-
-// Mobile menu
 const links=document.getElementById('links'),burger=document.getElementById('burger');
 if(burger&&links){burger.addEventListener('click',()=>{const o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
 links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');burger.setAttribute('aria-expanded',false)}));}
-
-// Reveal on scroll
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.rv,.rv-left,.rv-right').forEach(el=>io.observe(el));
-
-// Back to top
 if(bt){bt.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});}
-
 </script>
 </body>
 </html>
