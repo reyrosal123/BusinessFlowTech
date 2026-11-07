@@ -130,28 +130,18 @@ footer a:hover{color:var(--white)}
   .fgrid{flex-direction:column;text-align:center}
 }
 
-
-/* Page hero */
 .page-hero{min-height:45vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 1.5rem 60px;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(36,123,255,.12) 0%,transparent 70%)}
 .page-hero h1{font-size:clamp(2.4rem,5.5vw,4rem);margin-bottom:1rem}
 .page-hero h1 span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .page-hero .lead{margin:0 auto;font-size:1.05rem}
-
-/* Contact layout */
 .contact-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:start}
-
-/* Left side */
 .contact-left-title{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;margin-bottom:.6rem;line-height:1.2}
 .contact-left-sub{color:var(--muted);font-size:.92rem;line-height:1.8;margin-bottom:2rem}
-
-/* Status badge */
 .status-badge{display:inline-flex;align-items:center;gap:.65rem;background:rgba(32,214,210,.07);border:1px solid rgba(32,214,210,.2);border-radius:14px;padding:.8rem 1.1rem;margin-bottom:2rem;width:100%}
 .status-dot{width:10px;height:10px;border-radius:50%;background:#20D6D2;flex-shrink:0;box-shadow:0 0 0 0 rgba(32,214,210,.5);animation:statusPulse 2s infinite}
 @keyframes statusPulse{0%,100%{box-shadow:0 0 0 0 rgba(32,214,210,.4)}50%{box-shadow:0 0 0 8px rgba(32,214,210,0)}}
 .status-text h4{font-size:.88rem;font-weight:600;color:#20D6D2;margin-bottom:.1rem}
 .status-text p{font-size:.78rem;color:var(--muted)}
-
-/* Contact methods */
 .contact-methods{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem}
 .method-card{display:flex;align-items:center;gap:1rem;padding:1.1rem 1.25rem;background:var(--card);border:1px solid var(--border);border-radius:16px;text-decoration:none;color:var(--white);transition:all .3s cubic-bezier(.22,1,.36,1);position:relative;overflow:hidden}
 .method-card::before{content:'';position:absolute;inset:0;background:var(--grad);opacity:0;transition:opacity .3s}
@@ -164,8 +154,6 @@ footer a:hover{color:var(--white)}
 .method-body p{color:var(--muted);font-size:.8rem}
 .method-arrow{color:var(--muted);font-size:.8rem;transition:transform .3s,color .3s}
 .method-card:hover .method-arrow{transform:translateX(4px);color:var(--blue)}
-
-/* Availability card */
 .avail-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:1.4rem 1.5rem}
 .avail-title{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
 .avail-title i{color:var(--blue)}
@@ -175,16 +163,12 @@ footer a:hover{color:var(--white)}
 .avail-item strong{color:var(--white)}
 .avail-item.open{border-color:rgba(32,214,210,.2);background:rgba(32,214,210,.04)}
 .avail-item.open strong{color:#20D6D2}
-
-/* Floating badges */
 .float-badges{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
 .float-badge{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.65rem 1rem;display:flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;animation:badgeFloat 5s ease-in-out infinite}
 .float-badge:nth-child(2){animation-delay:1s}
 .float-badge:nth-child(3){animation-delay:2s}
 @keyframes badgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 .float-badge i{color:var(--blue)}
-
-/* Form */
 .form-wrap{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:2.5rem;position:relative;overflow:hidden}
 .form-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .form-glow{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(36,123,255,.05) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none;animation:driftA 10s ease-in-out infinite}
@@ -199,15 +183,8 @@ footer a:hover{color:var(--white)}
 .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:rgba(36,123,255,.5);background:rgba(36,123,255,.03);box-shadow:0 0 0 4px rgba(36,123,255,.06)}
 .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(148,163,184,.6)}
 .field-line{position:absolute;bottom:0;left:12px;right:12px;height:2px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.22,1,.36,1);border-radius:0 0 2px 2px}
-.form-group input:not(:placeholder-shown)+.field-line,
-.form-group input:focus+.field-line,
-.form-group textarea:not(:placeholder-shown)+.field-line,
-.form-group textarea:focus+.field-line{transform:scaleX(1)}
-
-/* Char counter */
+.form-group input:not(:placeholder-shown)+.field-line,.form-group input:focus+.field-line,.form-group textarea:not(:placeholder-shown)+.field-line,.form-group textarea:focus+.field-line{transform:scaleX(1)}
 .char-counter{position:absolute;right:.75rem;bottom:.75rem;font-size:.7rem;color:var(--muted)}
-
-/* Submit button */
 .form-submit{width:100%;background:var(--grad);color:white;border:none;cursor:pointer;padding:1.05rem;border-radius:12px;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;transition:transform .25s,box-shadow .25s;box-shadow:0 6px 24px rgba(36,123,255,.28);position:relative;overflow:hidden;letter-spacing:.02em;margin-top:.5rem}
 .form-submit::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,.15);transform:translateX(-110%) skewX(-20deg);transition:transform .5s}
 .form-submit:hover::before{transform:translateX(110%) skewX(-20deg)}
@@ -217,8 +194,6 @@ footer a:hover{color:var(--white)}
 .submit-inner{display:flex;align-items:center;justify-content:center;gap:.6rem}
 .submit-icon{transition:transform .3s}
 .form-submit:hover .submit-icon{transform:translateX(4px)}
-
-/* Progress steps */
 .form-steps{display:flex;align-items:center;gap:.5rem;margin-bottom:2rem}
 .step-pill{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:500;color:var(--muted);transition:color .3s}
 .step-pill.active{color:var(--blue)}
@@ -227,15 +202,12 @@ footer a:hover{color:var(--white)}
 .step-pill.active .step-dot{background:rgba(36,123,255,.15);border-color:rgba(36,123,255,.5);color:var(--blue)}
 .step-pill.done .step-dot{background:rgba(32,214,210,.15);border-color:rgba(32,214,210,.4);color:#20D6D2}
 .step-line{flex:1;height:1px;background:var(--border)}
-
-/* FAQ mini */
 .faq-mini{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem}
 .faq-mini-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;transition:border-color .3s,transform .3s}
 .faq-mini-card:hover{border-color:rgba(36,123,255,.2);transform:translateY(-3px)}
 .faq-mini-card i{color:var(--blue);font-size:1.1rem;margin-bottom:.75rem;display:block}
 .faq-mini-card h4{font-family:'Syne',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:.5rem}
 .faq-mini-card p{color:var(--muted);font-size:.84rem;line-height:1.7}
-
 @media(max-width:1024px){.contact-layout{grid-template-columns:1fr} .faq-mini{grid-template-columns:1fr}}
 @media(max-width:768px){.form-row{grid-template-columns:1fr}}
 </style>
@@ -246,31 +218,28 @@ footer a:hover{color:var(--white)}
 <nav class="nav" id="mainNav">
   <div class="wrap" style="height:100%;display:flex;align-items:center;justify-content:space-between;">
     <a href="index.html" class="logo">
-      <img src="https://raw.githubusercontent.com/reyrosal123/BusinessFlowTech/main/BSFlowTech.jpeg" alt="BSFlowTech logo" style="height:36px;width:auto;border-radius:8px;"/>
-      <b>BSFlowTech</b>
+      <img src="https://raw.githubusercontent.com/reyrosal123/BusinessFlowTech/main/BSFlowTech.jpeg" alt="BSFlowTech logo" style="height:40px;width:auto;border-radius:8px;"/>
     </a>
     <ul class="links">
-      <li><a href="index.html" class="">Home</a></li><li><a href="solutions.html" class="">Solutions</a></li><li><a href="services.html" class="">Services</a></li><li><a href="projects.html" class="">Projects</a></li><li><a href="experience.html" class="">Experience</a></li><li><a href="about.html" class="">About</a></li><li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="index.html" class="">Home</a></li><li><a href="solutions.html" class="">Solutions</a></li><li><a href="services.html" class="">Services</a></li><li><a href="projects.html" class="">Projects</a></li><li><a href="experience.html" class="">Experience</a></li><li><a href="results.html" class="">Results</a></li><li><a href="about.html" class="">About</a></li><li><a href="contact.html" class="active">Contact</a></li>
       <li><a href="contact.html" class="btn">Let's Talk</a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
   </div>
 </nav>
 <div class="mob-menu" id="links">
-  <a href="index.html" class="mob-link">Home</a><a href="solutions.html" class="mob-link">Solutions</a><a href="services.html" class="mob-link">Services</a><a href="projects.html" class="mob-link">Projects</a><a href="experience.html" class="mob-link">Experience</a><a href="about.html" class="mob-link">About</a><a href="contact.html" class="mob-link active">Contact</a>
+  <a href="index.html" class="mob-link">Home</a><a href="solutions.html" class="mob-link">Solutions</a><a href="services.html" class="mob-link">Services</a><a href="projects.html" class="mob-link">Projects</a><a href="experience.html" class="mob-link">Experience</a><a href="results.html" class="mob-link">Results</a><a href="about.html" class="mob-link">About</a><a href="contact.html" class="mob-link active">Contact</a>
   <a href="contact.html" class="btn btn-p" style="margin-top:1rem;">Let's Talk</a>
 </div>
 <a href="#" class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
 
-
-<!-- Hero -->
 <section class="page-hero">
   <div class="wrap">
     <div class="rv">
-      <div class="eyebrow" style="justify-content:center"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--blue);display:inline-block;margin-right:.4rem;animation:pulse 2s infinite"></span> Open for Projects</div>
+      <div class="eyebrow" style="justify-content:center"><span style="width:7px;height:7px;border-radius:50%;background:var(--blue);display:inline-block;margin-right:.4rem;animation:pulse 2s infinite"></span> Open for Projects</div>
       <h1>Let's Build a<br><span>Smarter Business System</span></h1>
       <p class="lead">Have a project in mind? Let's discuss how SuiteDash and n8n can help improve your business operations.</p>
-      <div class="hero-tags" style="display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem">
+      <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem">
         <span style="background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);padding:.35rem 1rem;border-radius:100px;font-size:.8rem;display:flex;align-items:center;gap:.4rem"><i class="fas fa-clock" style="color:var(--blue);font-size:.75rem"></i> 48h response</span>
         <span style="background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);padding:.35rem 1rem;border-radius:100px;font-size:.8rem;display:flex;align-items:center;gap:.4rem"><i class="fas fa-globe" style="color:var(--blue);font-size:.75rem"></i> Remote worldwide</span>
         <span style="background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);padding:.35rem 1rem;border-radius:100px;font-size:.8rem;display:flex;align-items:center;gap:.4rem"><i class="fas fa-shield-alt" style="color:var(--blue);font-size:.75rem"></i> NDA available</span>
@@ -278,19 +247,13 @@ footer a:hover{color:var(--white)}
     </div>
   </div>
 </section>
-
-<!-- Contact Section -->
 <section style="padding:60px 0 90px">
   <div class="wrap">
     <div class="contact-layout">
-
-      <!-- LEFT -->
       <div class="rv-left">
         <div class="eyebrow">Get in Touch</div>
         <h2 class="contact-left-title">Ready to start?<br>We're one message away.</h2>
         <p class="contact-left-sub">Whether it's a quick question or a full project brief — reach out via any channel below or fill out the form. We'll figure out the best way to help.</p>
-
-        <!-- Status -->
         <div class="status-badge">
           <div class="status-dot"></div>
           <div class="status-text">
@@ -298,12 +261,10 @@ footer a:hover{color:var(--white)}
             <p>Taking on new projects · Responds in &lt; 48 hours</p>
           </div>
         </div>
-
-        <!-- Methods -->
         <div class="contact-methods">
-          <a href="/cdn-cgi/l/email-protection#4d3f223e2c213f28347c797e0d2a202c2421632e2220" class="method-card">
+          <a href="mailto:bsflowtech@gmail.com" class="method-card">
             <div class="method-icon"><i class="fas fa-envelope"></i></div>
-            <div class="method-body"><h4>Send an Email</h4><p><span class="__cf_email__" data-cfemail="d2a0bda1b3bea0b7abe3e6e192b5bfb3bbbefcb1bdbf">[email&#160;protected]</span></p></div>
+            <div class="method-body"><h4>Send an Email</h4><p>bsflowtech@gmail.com</p></div>
             <i class="fas fa-arrow-right method-arrow"></i>
           </a>
           <a href="https://api.whatsapp.com/send?phone=639533881141&text=Hello%20BSFlowTech%2C%20I%20would%20like%20to%20inquire." class="method-card" target="_blank">
@@ -311,14 +272,12 @@ footer a:hover{color:var(--white)}
             <div class="method-body"><h4>WhatsApp Chat</h4><p>+63 953 388 1141 · Quick replies</p></div>
             <i class="fas fa-arrow-right method-arrow"></i>
           </a>
-          <a href="https://github.com/reyrosal" class="method-card" target="_blank">
+          <a href="https://github.com/reyrosal123" class="method-card" target="_blank">
             <div class="method-icon" style="background:linear-gradient(135deg,#333,#555)"><i class="fab fa-github"></i></div>
-            <div class="method-body"><h4>GitHub</h4><p>github.com/reyrosal</p></div>
+            <div class="method-body"><h4>GitHub</h4><p>github.com/reyrosal123</p></div>
             <i class="fas fa-arrow-right method-arrow"></i>
           </a>
         </div>
-
-        <!-- Availability -->
         <div class="avail-card">
           <div class="avail-title"><i class="fas fa-calendar-check"></i> Availability This Week</div>
           <div class="avail-grid">
@@ -328,21 +287,15 @@ footer a:hover{color:var(--white)}
             <div class="avail-item"><span>Response</span><strong>&lt; 48 hours</strong></div>
           </div>
         </div>
-
-        <!-- Floating badges -->
         <div class="float-badges">
           <div class="float-badge"><i class="fas fa-lock"></i> NDA on request</div>
           <div class="float-badge"><i class="fas fa-undo"></i> Free revision round</div>
           <div class="float-badge"><i class="fas fa-headset"></i> Post-launch support</div>
         </div>
       </div>
-
-      <!-- RIGHT — FORM -->
       <div class="rv-right">
         <div class="form-wrap">
           <div class="form-glow"></div>
-
-          <!-- Step Indicator -->
           <div class="form-steps" id="formSteps">
             <div class="step-pill active" id="step1pill"><div class="step-dot">1</div> Your Info</div>
             <div class="step-line"></div>
@@ -350,10 +303,8 @@ footer a:hover{color:var(--white)}
             <div class="step-line"></div>
             <div class="step-pill" id="step3pill"><div class="step-dot">3</div> Send</div>
           </div>
-
           <h3 class="form-title">Send a Message</h3>
           <p class="form-sub">Fill out the form — we'll review your project and reply with next steps.</p>
-
           <div class="form-row">
             <div class="form-group">
               <label>Full Name *</label>
@@ -366,7 +317,6 @@ footer a:hover{color:var(--white)}
               <div class="field-line"></div>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Email Address *</label>
@@ -384,7 +334,6 @@ footer a:hover{color:var(--white)}
               </select>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Project Budget (optional)</label>
@@ -409,18 +358,14 @@ footer a:hover{color:var(--white)}
               </select>
             </div>
           </div>
-
           <div class="form-group" style="position:relative;">
             <label>Project Details *</label>
             <textarea id="f-message" rows="5" placeholder="Describe your project, goals, current setup, and anything else we should know..." maxlength="1000" oninput="updateSteps();updateChar()"></textarea>
             <span class="char-counter" id="charCount">0 / 1000</span>
             <div class="field-line"></div>
           </div>
-
           <button class="form-submit" id="submitBtn" onclick="submitToSheets()">
-            <span class="submit-inner">
-              Send Message <i class="fas fa-paper-plane submit-icon"></i>
-            </span>
+            <span class="submit-inner">Send Message <i class="fas fa-paper-plane submit-icon"></i></span>
           </button>
           <p style="color:var(--muted);font-size:.74rem;text-align:center;margin-top:.75rem;line-height:1.6;">
             <i class="fas fa-lock" style="color:var(--blue);margin-right:.3rem;"></i>
@@ -431,8 +376,6 @@ footer a:hover{color:var(--white)}
     </div>
   </div>
 </section>
-
-<!-- FAQ Mini -->
 <section class="alt" style="padding:80px 0">
   <div class="wrap">
     <div style="text-align:center;margin-bottom:3rem;" class="rv">
@@ -464,7 +407,6 @@ footer a:hover{color:var(--white)}
   </div>
 </section>
 
-
 <footer>
   <div class="wrap">
     <div class="fgrid">
@@ -486,10 +428,8 @@ footer a:hover{color:var(--white)}
   </div>
 </footer>
 
-
 <div class="toast" id="toast"><span style="margin-right:.5rem">✅</span><span id="toastMsg">Message sent!</span></div>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 
 // Particles (blue/cyan)
 (function(){
@@ -530,94 +470,18 @@ document.querySelectorAll('.rv,.rv-left,.rv-right').forEach(el=>io.observe(el));
 // Back to top
 if(bt){bt.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});}
 
-
-// Google Sheets integration (preserved from original)
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwktOVWTHUCrsNIxjs2KH6Vb8Rv7VwZZhKJg-su1UTnZwStyRv1RulLDP0FURQoHx9J/exec";
-
 async function submitToSheets() {
-  const name    = document.getElementById('f-name').value.trim();
-  const email   = document.getElementById('f-email').value.trim();
-  const company = document.getElementById('f-company').value.trim();
-  const service = document.getElementById('f-service').value;
-  const budget  = document.getElementById('f-budget').value;
-  const timeline= document.getElementById('f-timeline').value;
-  const message = document.getElementById('f-message').value.trim();
-  const btn     = document.getElementById('submitBtn');
-
-  if (!name || !email || !service || !message) {
-    showToast('Please fill in Name, Email, Service & Message.', 'err'); return;
-  }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    showToast('Please enter a valid email address.', 'err'); return;
-  }
-
-  btn.disabled = true;
-  btn.querySelector('.submit-inner').innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
-
-  try {
-    await fetch(GOOGLE_SCRIPT_URL, {
-      method:'POST', mode:'no-cors',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ name, email, company, service, budget, timeline, message })
-    });
-    showToast('Message sent! BSFlowTech will reply within 48h.', 'ok');
-    document.getElementById('step3pill').className = 'step-pill done';
-    document.getElementById('step3pill').querySelector('.step-dot').textContent = '✓';
-    ['f-name','f-email','f-company','f-message'].forEach(id=>document.getElementById(id).value='');
-    ['f-service','f-budget','f-timeline'].forEach(id=>document.getElementById(id).selectedIndex=0);
-    document.getElementById('charCount').textContent = '0 / 1000';
-    setTimeout(()=>{
-      document.getElementById('step1pill').className='step-pill active';
-      document.getElementById('step1pill').querySelector('.step-dot').textContent='1';
-      document.getElementById('step2pill').className='step-pill';
-      document.getElementById('step2pill').querySelector('.step-dot').textContent='2';
-      document.getElementById('step3pill').className='step-pill';
-      document.getElementById('step3pill').querySelector('.step-dot').textContent='3';
-    }, 4000);
-  } catch(err) {
-    showToast('Something went wrong. Email us directly!', 'err');
-  }
-
-  btn.disabled = false;
-  btn.querySelector('.submit-inner').innerHTML = 'Send Message <i class="fas fa-paper-plane submit-icon"></i>';
+  const name=document.getElementById('f-name').value.trim(),email=document.getElementById('f-email').value.trim(),company=document.getElementById('f-company').value.trim(),service=document.getElementById('f-service').value,budget=document.getElementById('f-budget').value,timeline=document.getElementById('f-timeline').value,message=document.getElementById('f-message').value.trim(),btn=document.getElementById('submitBtn');
+  if(!name||!email||!service||!message){showToast('Please fill in Name, Email, Service & Message.','err');return}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){showToast('Please enter a valid email address.','err');return}
+  btn.disabled=true;btn.querySelector('.submit-inner').innerHTML='<i class="fas fa-spinner fa-spin"></i> Sending…';
+  try{await fetch(GOOGLE_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,company,service,budget,timeline,message})});showToast('Message sent! BSFlowTech will reply within 48h.','ok');document.getElementById('step3pill').className='step-pill done';document.getElementById('step3pill').querySelector('.step-dot').textContent='✓';['f-name','f-email','f-company','f-message'].forEach(id=>document.getElementById(id).value='');['f-service','f-budget','f-timeline'].forEach(id=>document.getElementById(id).selectedIndex=0);document.getElementById('charCount').textContent='0 / 1000';setTimeout(()=>{document.getElementById('step1pill').className='step-pill active';document.getElementById('step1pill').querySelector('.step-dot').textContent='1';document.getElementById('step2pill').className='step-pill';document.getElementById('step2pill').querySelector('.step-dot').textContent='2';document.getElementById('step3pill').className='step-pill';document.getElementById('step3pill').querySelector('.step-dot').textContent='3';},4000);}catch(err){showToast('Something went wrong. Email us directly!','err');}
+  btn.disabled=false;btn.querySelector('.submit-inner').innerHTML='Send Message <i class="fas fa-paper-plane submit-icon"></i>';
 }
-
-function showToast(msg, type) {
-  const t=document.getElementById('toast'), m=document.getElementById('toastMsg');
-  t.querySelector('span').textContent = type==='ok'?'✅':'⚠️';
-  m.textContent = msg;
-  t.className = 'toast show ' + type;
-  setTimeout(()=>t.classList.remove('show'), 5500);
-}
-
-function updateSteps() {
-  const name  = document.getElementById('f-name').value.trim();
-  const email = document.getElementById('f-email').value.trim();
-  const svc   = document.getElementById('f-service').value;
-  const msg   = document.getElementById('f-message').value.trim();
-  const s1 = document.getElementById('step1pill');
-  const s2 = document.getElementById('step2pill');
-  const s3 = document.getElementById('step3pill');
-  if (name && email) {
-    s1.className='step-pill done'; s1.querySelector('.step-dot').textContent='✓';
-    s2.className='step-pill active';
-    if (svc && msg) {
-      s2.className='step-pill done'; s2.querySelector('.step-dot').textContent='✓';
-      s3.className='step-pill active';
-    } else { s2.querySelector('.step-dot').textContent='2'; s3.className='step-pill'; s3.querySelector('.step-dot').textContent='3'; }
-  } else {
-    s1.className='step-pill active'; s1.querySelector('.step-dot').textContent='1';
-    s2.className='step-pill'; s2.querySelector('.step-dot').textContent='2';
-    s3.className='step-pill'; s3.querySelector('.step-dot').textContent='3';
-  }
-}
-
-function updateChar() {
-  const v = document.getElementById('f-message').value.length;
-  const el = document.getElementById('charCount');
-  el.textContent = v + ' / 1000';
-  el.style.color = v > 900 ? '#EF4444' : v > 700 ? '#247BFF' : 'var(--muted)';
-}
+function showToast(msg,type){const t=document.getElementById('toast'),m=document.getElementById('toastMsg');t.querySelector('span').textContent=type==='ok'?'✅':'⚠️';m.textContent=msg;t.className='toast show '+type;setTimeout(()=>t.classList.remove('show'),5500);}
+function updateSteps(){const name=document.getElementById('f-name').value.trim(),email=document.getElementById('f-email').value.trim(),svc=document.getElementById('f-service').value,msg=document.getElementById('f-message').value.trim(),s1=document.getElementById('step1pill'),s2=document.getElementById('step2pill'),s3=document.getElementById('step3pill');if(name&&email){s1.className='step-pill done';s1.querySelector('.step-dot').textContent='✓';s2.className='step-pill active';if(svc&&msg){s2.className='step-pill done';s2.querySelector('.step-dot').textContent='✓';s3.className='step-pill active';}else{s2.querySelector('.step-dot').textContent='2';s3.className='step-pill';s3.querySelector('.step-dot').textContent='3';}}else{s1.className='step-pill active';s1.querySelector('.step-dot').textContent='1';s2.className='step-pill';s2.querySelector('.step-dot').textContent='2';s3.className='step-pill';s3.querySelector('.step-dot').textContent='3';}}
+function updateChar(){const v=document.getElementById('f-message').value.length,el=document.getElementById('charCount');el.textContent=v+' / 1000';el.style.color=v>900?'#EF4444':v>700?'#247BFF':'var(--muted)';}
 </script>
 </body>
 </html>
