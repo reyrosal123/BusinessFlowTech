@@ -130,17 +130,18 @@ footer a:hover{color:var(--white)}
 .addon-tag{font-size:.7rem;padding:.18rem .6rem;border-radius:999px;background:rgba(108,99,255,.10);color:#9B95FF;border:1px solid rgba(108,99,255,.18)}
 
 /* Pricing */
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.price-card{padding:2.2rem;text-align:center;position:relative;overflow:hidden}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;align-items:stretch}
+.price-card{padding:2.2rem;text-align:center;position:relative;overflow:hidden;display:flex;flex-direction:column}
 .price-card.featured{border-color:rgba(36,123,255,.3);background:linear-gradient(135deg,rgba(36,123,255,.06) 0%,rgba(32,214,210,.04) 100%)}
 .price-card.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .price-popular{position:absolute;top:1rem;right:1rem;background:var(--grad);color:white;font-size:.65rem;font-weight:700;padding:.2rem .7rem;border-radius:999px;letter-spacing:.05em}
 .price-icon{width:52px;height:52px;border-radius:14px;background:rgba(36,123,255,.12);display:grid;place-items:center;margin:0 auto 1.2rem;font-size:1.2rem;color:var(--blue)}
 .price-card h3{font-size:1.15rem;margin-bottom:.3rem}
-.price-card .price-sub{color:var(--muted);font-size:.84rem;margin-bottom:1.5rem}
+.price-card .price-sub{color:var(--muted);font-size:.84rem;margin-bottom:1.5rem;min-height:2.6em}
 .price-amount{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;line-height:1;margin-bottom:.3rem}
+.price-from{font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;color:var(--muted);-webkit-text-fill-color:var(--muted);letter-spacing:.02em;margin-right:.4rem}
 .price-per{color:var(--muted);font-size:.85rem;margin-bottom:1.8rem}
-.price-features{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;text-align:left}
+.price-features{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;text-align:left;flex:1}
 .price-feat{display:flex;align-items:center;gap:.55rem;font-size:.88rem;color:var(--muted)}
 .price-feat i{color:var(--cyan);font-size:.75rem;flex-shrink:0}
 
@@ -151,7 +152,7 @@ footer a:hover{color:var(--white)}
 .cta h2{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:1rem;position:relative;z-index:1}
 .cta p{color:var(--muted);max-width:520px;margin:0 auto 2rem;line-height:1.8;position:relative;z-index:1}
 
-@media(max-width:960px){.svc-grid{grid-template-columns:1fr} .addon-grid{grid-template-columns:1fr 1fr} .pricing-grid{grid-template-columns:1fr}}
+@media(max-width:960px){.svc-grid{grid-template-columns:1fr} .addon-grid{grid-template-columns:1fr 1fr} .pricing-grid{grid-template-columns:1fr} .price-card .price-sub{min-height:0}}
 @media(max-width:640px){.addon-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -255,7 +256,7 @@ footer a:hover{color:var(--white)}
     <div class="head center rv">
       <div class="eyebrow" style="justify-content:center">Pricing</div>
       <h2>Flexible Engagement Options</h2>
-      <p class="lead">Choose the model that fits your project scope and budget. Hourly work is a flat rate, and weekly, monthly, and full-project pricing is quoted based on your scope.</p>
+      <p class="lead">Choose the model that fits your project scope and budget. Hourly work is a flat rate range, while weekly and monthly plans start at a set price and are finalized based on your hours and scope.</p>
     </div>
     <div class="pricing-grid">
       <div class="glass price-card rv" style="transition-delay:.05s">
@@ -278,8 +279,8 @@ footer a:hover{color:var(--white)}
         <div class="price-icon" style="background:rgba(32,214,210,.15);color:#20D6D2"><i class="fas fa-calendar-week"></i></div>
         <h3>Weekly</h3>
         <p class="price-sub">Best for focused project sprints</p>
-        <span class="price-amount">Custom</span>
-        <p class="price-per">per week &middot; based on hours and scope</p>
+        <span class="price-amount"><span class="price-from">From</span>$200</span>
+        <p class="price-per">per week &middot; 20+ hrs &middot; final rate based on scope</p>
         <div class="price-features">
           <div class="price-feat"><i class="fas fa-check"></i>Dedicated daily progress</div>
           <div class="price-feat"><i class="fas fa-check"></i>Hours agreed upfront each week</div>
@@ -292,9 +293,9 @@ footer a:hover{color:var(--white)}
       <div class="glass price-card rv" style="transition-delay:.15s">
         <div class="price-icon" style="background:rgba(124,155,255,.15);color:#7C9BFF"><i class="fas fa-calendar-alt"></i></div>
         <h3>Monthly</h3>
-        <p class="price-sub">Best for ongoing automation &amp; CRM management</p>
-        <span class="price-amount">Custom</span>
-        <p class="price-per">per month &middot; based on hours and scope</p>
+        <p class="price-sub">Best for ongoing automation &amp; CRM</p>
+        <span class="price-amount"><span class="price-from">From</span>$600</span>
+        <p class="price-per">per month &middot; 60+ hrs &middot; final rate based on scope</p>
         <div class="price-features">
           <div class="price-feat"><i class="fas fa-check"></i>Ongoing CRM &amp; portal management</div>
           <div class="price-feat"><i class="fas fa-check"></i>Monthly hours agreed upfront</div>
